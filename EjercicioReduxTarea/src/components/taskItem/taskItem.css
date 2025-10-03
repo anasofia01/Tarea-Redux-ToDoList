@@ -1,0 +1,90 @@
+.task-item {
+	background: #fff;
+	border-radius: 10px;
+	padding: 16px;
+	margin-bottom: 16px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task-item:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.task-content h3 {
+	margin: 0 0 6px 0;
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+}
+
+.task-content p {
+	margin: 0 0 10px 0;
+	font-size: 14px;
+	color: #666;
+}
+
+.task-editing {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.task-input,
+.task-textarea {
+	width: 100%;
+	padding: 10px 12px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	font-size: 14px;
+	box-sizing: border-box;
+	transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task-input:focus,
+.task-textarea:focus {
+	border-color: #007bff;
+	box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+	outline: none;
+}
+
+.task-actions {
+	display: flex;
+	gap: 10px;
+	margin-top: 8px;
+}
+
+.task-actions button {
+	padding: 8px 14px;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 500;
+	transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.task-actions button:hover {
+	transform: scale(1.05);
+}
+
+.task-actions .edit {
+	background-color: #ffc107;
+	color: #fff;
+}
+
+.task-actions .save {
+	background-color: #28a745;
+	color: #fff;
+}
+
+.task-actions .cancel {
+	background-color: #6c757d;
+	color: #fff;
+}
+
+.task-actions .delete {
+	background-color: #dc3545;
+	color: #fff;
+}
